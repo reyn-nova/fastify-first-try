@@ -1,0 +1,14 @@
+{
+  "name": "fastify-first-try",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rynvva",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "3.11.0"
+  }
+}
