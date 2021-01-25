@@ -1,5 +1,4 @@
 const fastify = require('fastify')
-const PORT = process.env.PORT || 3000
 
 const { root } = require('./endpoints-functions.js')
 
@@ -9,7 +8,7 @@ const fastifyInstance = fastify({
 
 fastifyInstance.get('/', root)
 
-fastifyInstance.listen(PORT, (err) => {
+fastifyInstance.listen(process.env.PORT || 3000, (err) => {
   if (err) {
     app.log.error(err)
     
