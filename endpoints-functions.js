@@ -1,5 +1,5 @@
 async function root(request, reply) {
-  return { message: 'Hello world!' }
+  request.send({ message: 'Hello world!' })
 }
 
 module.exports = {
