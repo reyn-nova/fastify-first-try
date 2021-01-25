@@ -1,5 +1,8 @@
 async function root(request, reply) {
-  reply.send({ message: 'Hello world!' })
+  reply
+  .code(200)
+  .header('Content-Type', 'application/json; charset=utf-8')
+  .send({ message: 'Hello world!' })
 }
 
 module.exports = {
